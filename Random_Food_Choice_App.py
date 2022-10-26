@@ -1,7 +1,8 @@
 import random
 print("Hi, Welcome to Random Food Choice App\n")
 value = int(input("Please enter number to select food category choice:\n 1. Fruits\n 2. Vegetables\n 3. Grains\n 4. Protein Foods\n 5. Dairy\n"))
-if value == 1:
+#prompts user for value as an integer
+if value == 1: #executes data according to the set conditions
     Fruits_list = ['Pineaple', 'Orange', 'Banana', 'Mango', 'Water Mellon', 'Guava']
     print("Your food choice is:" + (random.choice(Fruits_list)))
 elif value == 2:
@@ -17,4 +18,4 @@ elif value == 5:
     Dairy_list = ['Milk', 'Yorghut', 'Kefir', 'Cheese', 'Cottage Cheeze', 'Calcium-fortified Soymilk']
     print("Your food choice is:" + (random.choice(Dairy_list)))
 else:
-    print("Sorry, the category you selected does not exist")
+    print("Sorry, the category you selected does not exist") #this is to prevent entry of wrong integer values 
